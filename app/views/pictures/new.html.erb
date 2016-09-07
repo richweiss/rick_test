@@ -5,11 +5,9 @@
 
 <%= form_for :pictures, url: pictures_path do |f| %>
 
-<%= form_tag(pictures_path, :method => :post) do  %>
-  <%= cl_image_upload_tag(:image_id) %>
+  <%= f.cl_image_upload(:image) %>
 
-    <%= f.submit %>
-<% end %>
+  <%= f.submit %>
 <% end %>
 
 

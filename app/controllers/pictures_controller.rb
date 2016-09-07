@@ -20,13 +20,14 @@ def new
   end
 
   def create
+  	@picture = Picture.new(params[:picture])
   	# Cloudinary::Uploader.upload(params[:file])
  
 
-  	 #Cloudinary::Uploader.upload(path)
+  	 #Cloudinary::Uploader.upload(File.dirname[:file])
   
-  	   render plain: File.absolute_path(params[:file]).inspect
-
+  	   # render plain: File.absolute_path(params[:file]).inspect
+   	#Cloudinary::Uploader.upload(File.dirname[:file])
   end
 
   #private

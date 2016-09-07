@@ -1,0 +1,6 @@
+<h1>Index</h1>
+
+<%= form_tag(pictures_path, :method => :post) do  %>
+  <%= cl_image_upload_tag(:image_id) %>
+    <%= submit_tag 'Submit' %>
+<% end %>
